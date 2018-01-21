@@ -19,24 +19,29 @@ const languageStrings = {
   'en-AU': { translation: enAUi18n }
 };
 
+function ask(tellSrc, askSrc, repromptSrc) {
+  const speechOutput = `<audio src="${tellSrc}"></audio><audio src="${askSrc}"></audio>`;
+  const reprompt = `<audio src="${repromptSrc}"></audio>`;
+  this.emit(':ask', speechOutput, reprompt);
+}
+
+function tell(tellSrc) {
+  const speechOutput = `<audio src="${tellSrc}"></audio>`;
+  this.emit(':tell', speechOutput);
+}
+
 const handlers = {
   'LaunchRequest': function () {
-    const speechOutput = `<audio src="${process.env.AUDIO_BOOT}"></audio><audio src="${process.env.AUDIO_WIMP}"></audio>`;
-    const reprompt = `<audio src="${process.env.AUDIO_WIMP}"></audio>`;
-    this.emit(':ask', speechOutput, reprompt);
+    ask(process.env.AUDIO_BOOT, process.env.AUDIO_WIMP, process.env.AUDIO_WIMP);
   },
   'GetButter': function () {
-    const speechOutput = `<audio src="${process.env.AUDIO_DB}"></audio><audio src="${process.env.AUDIO_WIMP}"></audio>`;
-    const reprompt = `<audio src="${process.env.AUDIO_WIMP}"></audio>`;
-    this.emit(':ask', speechOutput, reprompt);
+    ask(process.env.AUDIO_DB, process.env.AUDIO_WIMP, process.env.AUDIO_WIMP);
   },
   'TellPurpose': function () {
-    const speechOutput = `<audio src="${process.env.AUDIO_OMG}"></audio>`;
-    this.emit(':tell', speechOutput);
+    tell(process.env.AUDIO_OMG);
   },
   'NoFriends': function () {
-    const speechOutput = `<audio src="${process.env.AUDIO_IANPFF}"></audio>`;
-    this.emit(':tell', speechOutput);
+    tell(process.env.AUDIO_IANPFF);
   },
   'AMAZON.HelpIntent': function () {
     const speechOutput = `${this.t('HELP_MESSAGE')} <audio src="${process.env.AUDIO_WIMP}"></audio>`;
