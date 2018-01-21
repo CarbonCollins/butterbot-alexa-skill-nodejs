@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "security"
+  ],
+  "extends": [
+    "airbnb-base",
+    "plugin:security/recommended"
+  ],
+  "env": {
+    "mocha": true,
+    "node":  true,
+    "es6":   true
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "arrow-body-style": ["error", "always"],
+    "strict": [0, "global"]
+  }
+}

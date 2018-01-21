@@ -1,5 +1,5 @@
 /* eslint-disable  func-names */
-/* eslint quote-props: ["error", "consistent"]*/
+/* eslint quote-props: ["error", "consistent"] */
 
 'use strict';
 
@@ -52,9 +52,9 @@ const handlers = {
 };
 
 exports.handler = function (event, context) {
-    const alexa = Alexa.handler(event, context);
-    alexa.process.env.APP_ID = process.env.APP_ID;
-    alexa.resources = languageStrings;
-    alexa.registerHandlers(handlers);
-    alexa.execute();
+  const alexa = Alexa.handler(event, context);
+  alexa.process.env.APP_ID = process.env.APP_ID;
+  alexa.resources = languageStrings;
+  alexa.registerHandlers(handlers);
+  alexa.execute();
 };
