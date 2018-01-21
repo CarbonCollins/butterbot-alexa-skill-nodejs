@@ -1,0 +1,10 @@
+{
+  "name": "alexa-skill-butterbot",
+  "description": "An Alexa skill for commanding the butterbot",
+  "version": "1.2.0",
+  "private": true,
+  "dependencies": {
+    "alexa-sdk": "^1.0.10",
+    "dotenv": "^4.0.0"
+  }
+}
