@@ -1,6 +1,6 @@
 # butterbot-alexa-skill-nodejs
 
-[![GitHub issues](https://img.shields.io/github/issues/CarbonCollins/butterbot-alexa-skill-nodejs.svg)]
+[![GitHub issues](https://img.shields.io/github/issues/CarbonCollins/butterbot-alexa-skill-nodejs.svg)](https://github.com/CarbonCollins/butterbot-alexa-skill-nodejs/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/CarbonCollins/butterbot-alexa-skill-nodejs/master/LICENSE)
 [![David](https://img.shields.io/david/CarbonCollins/butterbot-alexa-skill-nodejs.svg)]()
 [![David](https://img.shields.io/david/dev/CarbonCollins/butterbot-alexa-skill-nodejs.svg)]()
