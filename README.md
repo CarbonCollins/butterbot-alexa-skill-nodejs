@@ -5,6 +5,7 @@
 [![David](https://img.shields.io/david/CarbonCollins/butterbot-alexa-skill-nodejs.svg)]()
 [![David](https://img.shields.io/david/dev/CarbonCollins/butterbot-alexa-skill-nodejs.svg)]()
 [![Known Vulnerabilities](https://snyk.io/test/github/carboncollins/butterbot-alexa-skill-nodejs/badge.svg?targetFile=package.json)](https://snyk.io/test/github/carboncollins/butterbot-alexa-skill-nodejs?targetFile=package.json)
+[![Maintainability](https://api.codeclimate.com/v1/badges/4600fffc5f96ca0bbf9f/maintainability)](https://codeclimate.com/github/CarbonCollins/butterbot-alexa-skill-nodejs/maintainability)
 
 This is an alexa skill for butterbot. It's main purpose is to pass the butter. however, it was more of an experiment into how to program alexa skills using Node.JS more than anything.
 
